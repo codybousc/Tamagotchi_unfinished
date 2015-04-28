@@ -22,4 +22,16 @@ describe(Tama) do
     end
   end
 
+  describe("#is_alive") do
+    it("is alive if the food level is above 0") do
+      my_pet = Tama.new("lil dragon")
+      expect(my_pet.is_alive()).to(eq(true))
+    end
+
+    it("is dead if the food level is 0") do
+      my_pet = Tama.new("lil dragon")
+      my_pet.set_food_level(0) #make a method that will change the food level of your tamagotchi.
+      expect(my_pet.is_alive()).to(eq(false))
+    end
   end
+end
