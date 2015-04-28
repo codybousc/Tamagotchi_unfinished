@@ -15,5 +15,6 @@ get('/stats') do
     @food_level = tama.food_level()
     @activity_level = tama.activity_level()
     @sleep_level = tama.sleep_level()
+    @food_level = tama.set_food_level(params.fetch("food_value").to_i())
     erb(:stats)
 end

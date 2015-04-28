@@ -1,5 +1,11 @@
 <h3>Food level:</h3>
 <%= @food_level %>
+<form action = "/stats">
+    <label for='food_value'>How much like to feed me?</label>
+    <input id='food_value' name='food_value' type='text'>
+
+    <button type='submit' class='btn-danger'>Food Value</button>
+</form>
 <h3>Activity level:</h3>
 <%= @activity_level %>
 <h3>Sleep level:</h3>

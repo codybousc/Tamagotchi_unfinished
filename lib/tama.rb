@@ -40,4 +40,16 @@ class Tama
     define_method(:set_food_level) do |new_level|
         @food_level = new_level
     end
+
+    define_method(:feed) do 
+        @food_level = 10
+    end
+
+    define_method(:sleep) do
+        @sleep_level = 10
+    end
+
+    define_method(:play) do
+        @activity_level = 10
+    end
 end
