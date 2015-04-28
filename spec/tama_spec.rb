@@ -21,12 +21,7 @@ describe(Tama) do
       expect(my_pet.food_level()).to(eq(9))
     end
   end
-
-    it("gives a warning if life signs are too low") do
-        my_pet = Tama.new("lil dragon")
-        my_pet.set_food_level(2)
-        expect(my_pet.food_level()).to(eq("Feed Me!"))
-    end
+    
 
   describe("#is_alive") do
     it("is alive if the food level is above 0") do
