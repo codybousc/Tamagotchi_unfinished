@@ -28,4 +28,9 @@ class Tama
         @activity_level -= 1
         @sleep_level -= 1
     end
+
+    define_method(:is_alive) do
+        if @food_level > 0
+        end
+    end
 end
