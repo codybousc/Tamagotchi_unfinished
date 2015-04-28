@@ -13,10 +13,14 @@ class Tama
 
     define_method(:food_level) do
         @food_level
+        if @food_level < 3
+            "Feed Me!"
+        end
     end
 
     define_method(:sleep_level) do
         @sleep_level
+        if @food_level
     end
 
     define_method(:activity_level) do
