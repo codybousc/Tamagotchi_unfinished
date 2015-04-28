@@ -4,10 +4,11 @@ class Tama
         @food_level = 10
         @sleep_level = 10
         @activity_level = 10
+        @time = Time.new()
     end
 
     define_method(:name) do
-        @name 
+        @name
     end
 
     define_method(:food_level) do
@@ -22,4 +23,9 @@ class Tama
         @activity_level
     end
 
+    define_method(:time_passes) do
+        @food_level -= 1
+        @activity_level -= 1
+        @sleep_level -= 1
+    end
 end
